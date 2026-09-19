@@ -12,8 +12,11 @@ import { FaqSection } from "@/components/FaqSection";
 import { SupportSection } from "@/components/SupportSection";
 import { GithubSection } from "@/components/GithubSection";
 import { Footer } from "@/components/Footer";
+import { fetchLatestRelease } from "@/lib/github-releases";
 
-export default function Home() {
+export default async function Home() {
+  const latestRelease = await fetchLatestRelease();
+
   return (
     <div className="relative min-h-screen flex flex-col bg-[#0a0e17] text-slate-100 overflow-x-hidden">
       <Navbar />
@@ -26,7 +29,7 @@ export default function Home() {
         <AudienceSection />
         <HowItWorksSection />
         <ProductShowcaseSection />
-        <DownloadsSection />
+        <DownloadsSection initialRelease={latestRelease} />
         <FaqSection />
         <SupportSection />
         <GithubSection />

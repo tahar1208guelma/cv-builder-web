@@ -6,13 +6,16 @@ export const SITE_DESCRIPTION =
 export const SITE_TAGLINE =
   "Build beautiful, professional, ATS-friendly resumes offline with native Arabic RTL support.";
 
-export const GITHUB_URL = "https://github.com/tahar1208guelma/cv-builder";
+export const GITHUB_OWNER = "tahar1208guelma";
+export const GITHUB_REPOSITORY = "cv-builder";
 
-export const GITHUB_WEB_URL = "https://github.com/tahar1208guelma/cv-builder-web";
+export const GITHUB_URL = `https://github.com/${GITHUB_OWNER}/${GITHUB_REPOSITORY}`;
 
-export const GITHUB_RELEASES_URL = "https://github.com/tahar1208guelma/cv-builder/releases";
+export const GITHUB_WEB_URL = `https://github.com/${GITHUB_OWNER}/cv-builder-web`;
 
-export const GITHUB_ACTIONS_URL = "https://github.com/tahar1208guelma/cv-builder/actions";
+export const GITHUB_RELEASES_URL = `${GITHUB_URL}/releases`;
+
+export const GITHUB_ACTIONS_URL = `${GITHUB_URL}/actions`;
 
 export const SUPPORT_URL = "REPLACE_WITH_BUY_ME_A_COFFEE_URL";
 
