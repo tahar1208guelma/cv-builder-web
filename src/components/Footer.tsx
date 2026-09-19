@@ -4,7 +4,7 @@ import React from "react";
 import { useLanguage } from "@/context/LanguageContext";
 import { FileText, ShieldCheck, Globe } from "lucide-react";
 import { GithubIcon } from "./GithubIcon";
-import { GITHUB_URL, WINDOWS_DOWNLOAD_URL, ANDROID_DOWNLOAD_URL, MACOS_DOWNLOAD_URL, SUPPORT_URL } from "@/config/site";
+import { GITHUB_URL, SUPPORT_URL } from "@/config/site";
 
 export function Footer() {
   const { t, locale, setLocale } = useLanguage();
@@ -77,18 +77,18 @@ export function Footer() {
             </h4>
             <ul className="space-y-2">
               <li>
-                <a href={WINDOWS_DOWNLOAD_URL} className="hover:text-white transition-colors">
-                  Windows 64-bit (.zip)
+                <a href="#download" className="hover:text-white transition-colors">
+                  Windows 64-bit (v1.0.0)
                 </a>
               </li>
               <li>
-                <a href={ANDROID_DOWNLOAD_URL} className="hover:text-white transition-colors">
-                  Android (.apk)
+                <a href="#download" className="hover:text-white transition-colors">
+                  Android APK (v1.0.0)
                 </a>
               </li>
               <li>
-                <a href={MACOS_DOWNLOAD_URL} className="hover:text-white transition-colors">
-                  macOS Silicon &amp; Intel (.zip)
+                <a href="#download" className="hover:text-white transition-colors">
+                  macOS Silicon &amp; Intel (v1.0.0)
                 </a>
               </li>
               <li>

@@ -127,9 +127,11 @@ export function DownloadsSection() {
                 </div>
 
                 {/* Download CTA */}
-                <div className="mt-8 space-y-3">
+                <div className="mt-8 space-y-2.5">
                   <a
                     href={platform.downloadUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className={`w-full flex items-center justify-center gap-2 py-3.5 rounded-xl font-bold text-sm transition-all duration-200 ${
                       isRecommended
                         ? "bg-gradient-to-r from-indigo-600 via-blue-600 to-indigo-700 hover:from-indigo-500 hover:to-blue-500 text-white shadow-lg shadow-indigo-600/30 hover:scale-[1.02] active:scale-[0.98]"
@@ -142,7 +144,17 @@ export function DownloadsSection() {
                     </span>
                   </a>
 
-                  <div className="flex items-center justify-center gap-1.5 text-[11px] text-slate-500">
+                  <a
+                    href={platform.ciRunUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full flex items-center justify-center gap-1.5 py-2 px-3 rounded-lg text-xs font-medium text-slate-300 hover:text-white bg-slate-950/60 hover:bg-slate-900 border border-slate-800 hover:border-slate-700 transition-colors"
+                  >
+                    <ExternalLink className="w-3 h-3 text-indigo-400" />
+                    <span>Direct CI Artifact ({platform.size})</span>
+                  </a>
+
+                  <div className="flex items-center justify-center gap-1.5 text-[11px] text-slate-500 pt-1">
                     <ShieldCheck className="w-3 h-3 text-emerald-400" />
                     <span>Offline Standalone Binary • No Spyware</span>
                   </div>
@@ -158,15 +170,27 @@ export function DownloadsSection() {
             <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
             <span>{t.downloads.checksumNote}</span>
           </div>
-          <a
-            href={`${GITHUB_URL}/releases`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-1.5 text-indigo-400 hover:text-indigo-300 font-semibold"
-          >
-            <span>View All GitHub Releases &amp; Checksums</span>
-            <ExternalLink className="w-3.5 h-3.5" />
-          </a>
+          <div className="flex items-center gap-4">
+            <a
+              href={`${GITHUB_URL}/releases`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 text-indigo-400 hover:text-indigo-300 font-semibold"
+            >
+              <span>GitHub Releases</span>
+              <ExternalLink className="w-3.5 h-3.5" />
+            </a>
+            <span>•</span>
+            <a
+              href={`${GITHUB_URL}/actions`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 text-emerald-400 hover:text-emerald-300 font-semibold"
+            >
+              <span>CI/CD Pipelines</span>
+              <ExternalLink className="w-3.5 h-3.5" />
+            </a>
+          </div>
         </div>
       </div>
     </section>
