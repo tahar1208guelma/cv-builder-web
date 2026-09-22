@@ -19,6 +19,7 @@ export const en = {
     subtitle:
       "A high-performance offline desktop & mobile app. Craft ATS-friendly CVs in English, French, and Arabic with live preview, 7 tailored templates, and high-precision vector PDF export.",
     downloadBtn: "Download CV Builder",
+    watchPromoBtn: "Watch Promo Video",
     githubBtn: "View on GitHub",
     templatesBtn: "Explore Templates",
     stats: {
@@ -299,6 +300,18 @@ export const en = {
     viewRepo: "View Repository on GitHub",
     starRepo: "Star on GitHub",
     releases: "View Release Notes",
+  },
+  videoPromo: {
+    badge: "Cinematic Product Tour",
+    title: "See CV Builder in Action",
+    subtitle:
+      "Watch how fast and effortless it is to craft an ATS-optimized, multilingual resume completely offline.",
+    play: "Play",
+    pause: "Pause",
+    mute: "Mute",
+    unmute: "Unmute",
+    fullscreen: "Fullscreen",
+    windowTitle: "CV Builder — Official Promotional Video (HD)",
   },
   footer: {
     brandDesc:

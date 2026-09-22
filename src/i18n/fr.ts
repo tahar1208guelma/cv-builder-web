@@ -19,6 +19,7 @@ export const fr = {
     subtitle:
       "Une application native performante et hors-ligne pour ordinateur et mobile. Créez des CV optimisés ATS en français, anglais et arabe avec prévisualisation en direct et export PDF vectoriel de haute précision.",
     downloadBtn: "Télécharger CV Builder",
+    watchPromoBtn: "Voir la vidéo démo",
     githubBtn: "Voir sur GitHub",
     templatesBtn: "Découvrir les modèles",
     stats: {
@@ -299,6 +300,18 @@ export const fr = {
     viewRepo: "Voir le dépôt sur GitHub",
     starRepo: "Mettre une étoile sur GitHub",
     releases: "Notes de publication",
+  },
+  videoPromo: {
+    badge: "Présentation Vidéo Cinématique",
+    title: "Découvrez CV Builder en Action",
+    subtitle:
+      "Voyez à quel point il est simple et rapide de concevoir et exporter un CV professionnel multilingue 100% hors-ligne.",
+    play: "Lecture",
+    pause: "Pause",
+    mute: "Muet",
+    unmute: "Activer le son",
+    fullscreen: "Plein écran",
+    windowTitle: "CV Builder — Vidéo Promotionnelle Officielle (HD)",
   },
   footer: {
     brandDesc:

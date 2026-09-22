@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/Navbar";
 import { HeroSection } from "@/components/HeroSection";
+import { VideoPromoSection } from "@/components/VideoPromoSection";
 import { BenefitsSection } from "@/components/BenefitsSection";
 import { FeaturesSection } from "@/components/FeaturesSection";
 import { ArabicShowcaseSection } from "@/components/ArabicShowcaseSection";
@@ -22,6 +23,7 @@ export default async function Home() {
       <Navbar />
       <main className="flex-grow">
         <HeroSection />
+        <VideoPromoSection />
         <BenefitsSection />
         <FeaturesSection />
         <ArabicShowcaseSection />

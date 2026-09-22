@@ -11,6 +11,7 @@ import {
   Sparkles,
   ArrowRight,
   ArrowLeft,
+  Play,
 } from "lucide-react";
 import { GithubIcon } from "./GithubIcon";
 import { GITHUB_URL } from "@/config/site";
@@ -57,6 +58,14 @@ export function HeroSection() {
             >
               <Download className="w-5 h-5" />
               <span>{t.hero.downloadBtn}</span>
+            </a>
+
+            <a
+              href="#promo-video"
+              className="inline-flex items-center gap-2.5 px-5 py-3.5 text-sm sm:text-base font-semibold text-emerald-300 hover:text-white bg-slate-900/90 hover:bg-emerald-950/50 border border-emerald-500/40 rounded-xl shadow-lg shadow-emerald-950/30 transition-all duration-200 hover:border-emerald-400 hover:scale-[1.02] active:scale-[0.98]"
+            >
+              <Play className="w-4 h-4 text-emerald-400 fill-emerald-400" />
+              <span>{t.hero.watchPromoBtn}</span>
             </a>
 
             <a
