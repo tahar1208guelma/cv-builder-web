@@ -78,17 +78,17 @@ export function Footer() {
             <ul className="space-y-2">
               <li>
                 <a href="#download" className="hover:text-white transition-colors">
-                  Windows 64-bit (v1.0.0)
+                  Windows 64-bit (v1.0.2)
                 </a>
               </li>
               <li>
                 <a href="#download" className="hover:text-white transition-colors">
-                  Android APK (v1.0.0)
+                  Android APK (v1.0.2)
                 </a>
               </li>
               <li>
                 <a href="#download" className="hover:text-white transition-colors">
-                  macOS Silicon &amp; Intel (v1.0.0)
+                  macOS Silicon &amp; Intel (v1.0.2)
                 </a>
               </li>
               <li>

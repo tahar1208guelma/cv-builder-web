@@ -33,7 +33,7 @@ export function ProductMockup() {
             <div className="w-3 h-3 rounded-full bg-emerald-500/80 hover:opacity-100 transition-opacity" />
           </div>
           <span className="hidden sm:inline-block text-xs font-mono text-slate-400 ms-3">
-            CV Builder v1.0.0 — [Executive_Resume.pdf]
+            CV Builder v1.0.2 — [Executive_Resume.pdf]
           </span>
         </div>
 
